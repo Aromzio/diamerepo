@@ -1,101 +1,22 @@
+"use client"
 import Image from "next/image";
+import HeartButton from "./componentes/corazones";
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen flex items-center bg-gradient-to-r from-emerald-200 to-emerald-50">
+      <main className="">
+        <h1 className="flex row text-2xl p-10 text-pink-400">¡¡Feliz Aniversario Mi Amor!!</h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="flex row px-5 text-sm items-center">
+          <p>Hoy hace un año, me propusiste ser tu novio, sin embargo yo era tuyo desde la primera vez en que hablamos. No hay palabras, ni expresiones que me hagan poder hacerte entender la cantidad de cosas que producis en mi y todo lo que me motivas.<br/> Sos una mujer unica en todos los aspectos, tu voz tan sutil y dulce, tus ojos cafe almendrados me sumergen en un completo sueño, tus hermosos labios con una forma y textura exquisitas me vuelven adicto, tu nariz tan esplendida hace que tu rostro luzca simplemente divino, tu piel tan fina, tu cuerpo tan idealmente proporcionado, la forma tan tierna en la que reaccionas, el modo en el que hablas de las cosas que te gustan, tu forma de defender tus pensamientos, lo sensible que sos y todo lo que te haga ser vos me hacen sentirme el novio mas afortunado del mundo.<br/> Gracias por amarme, gracias por escucharme, gracias por ser vos, gracias por permitirme ser tu novio, gracias por entenderme, gracias por compartir tu vida conmigo.
+         <br/>Te amo Diamela, quiero tenerte en mi futuro por el resto de mi vida, quiero seguir mejorando como hombre y persona junto a tu lado, quiero verte feliz, quiero ver como logras todos tus objetivos y sueños, quiero estar siempre que me necesites, quiero ver siempre tu sonrisa. Quiero que siempre seas mi princesa, mi preciosa, mi mundo... el amor de toda mi vida. </p> 
+        </div>
+        <div>
+         <HeartButton/> 
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
